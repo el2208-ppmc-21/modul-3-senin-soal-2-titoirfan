@@ -1,0 +1,104 @@
+{
+  "tests": [
+    {
+      "name": "01",
+      "setup": "make soal-02",
+      "run": "./soal-02",
+      "input": "abc.11.22.34",
+      "output": "Alamat IP Tidak Valid",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "02",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "123.512.334.45",
+      "output": "Alamat IP Tidak Valid",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "03",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "125.512",
+      "output": "Alamat IP Tidak Valid",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "04",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "123.0.11.22",
+      "output": "Alamat IP Tidak Valid",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "05",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "123.1.23.45",
+      "output": "Alamat IP Valid\r\nAlamat IP Kelas A.",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "06",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "128.22.34.56",
+      "output": "Alamat IP Valid\r\nAlamat IP Kelas B.",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "07",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "200.245.22.13",
+      "output": "Alamat IP Valid\r\nAlamat IP Kelas C.",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "08",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "239.44.56.70",
+      "output": "Alamat IP Valid\r\nAlamat IP Kelas D.",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "09",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "255.41.51.123",
+      "output": "Alamat IP Valid\r\nAlamat IP Kelas E.",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "10",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "1.12.123.125",
+      "output": "Alamat IP Valid\r\nAlamat IP Kelas A.",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    }
+  ]
+}
